@@ -1,0 +1,15 @@
+Paleta de cores estilo Clássico de HQs (estilo Marvel / DC)
+
+Navbar:
+
+Fundo da Navbar: #1E1E1E (preto carvão)
+Texto Principal: #FFD700 (amarelo vibrante)
+Texto do menu: #FFFFFF (branco claro)
+Hover/Menu ativo: #FF3131 (vermelho quadrinhos)
+Detalhes/Sombra/Borda: #FFFFFF ou #EEEEEE (branco claro)
+
+Botão de Login:
+
+Fundo: bg-[#FF3131] (vermelho vibrante)
+Texto: text-white
+Hover: hover:bg-[#cc1e1e] (tom mais escuro do vermelho)

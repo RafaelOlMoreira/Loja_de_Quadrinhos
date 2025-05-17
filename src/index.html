@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- bloco para a fonte da pagina -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        .font-bangers {
+            font-family: 'Bangers', cursive;
+        }
+    </style>
+
+    <title>Loja de Quadrinhos</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-[#1E1E1E] fixed w-full top-0 z-20">
+        <div class="max-w-screen-xl mx-auto p-4 flex items-center justify-between">
+
+            <!-- Logo e titulo -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="#" class="h-8" alt="">
+                <span class="text-3xl font-bangers text-[#FFD700]">ComicZone</span>
+            </a>
+
+            <!-- Itens menu -->
+            <ul class="hidden md:flex gap-6 text-2xl font-bangers">
+                <li><a href="#" class="text-white hover:text-[#FF3131]">Início</a></li>
+                <li><a href="#" class="text-white hover:text-[#FF3131]">Loja</a></li>
+                <li><a href="#" class="text-white hover:text-[#FF3131]">Eventos</a></li>
+                <li><a href="#" class="text-white hover:text-[#FF3131]">Contato</a></li>
+            </ul>
+
+            <!-- Botão de Login -->
+            <div class="flex items-center gap-3 md:gap-0">
+                <button class="bg-[#FF3131] text-white font-medium text-sm px-4 py-2 rounded hover:bg-[#cc1e1e]">
+                    Fazer Login
+                </button>
+
+                <!-- Botão menu hamburguer -->
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="md:hidden p-2 text-gray-400 hover:bg-gray-700 rounded focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="mt-[68px]">
+        <img src="assets/banner.png" alt="Banner Hero" class="w-full h-auto object-cover">
+    </section>
+
+    <!-- Inicio Section -->
+    <section class="bg-[#242424]">
+        <h2 class="text-9xl font-bangers text-[#FFD700] pt-6 text-center">Quem Somos?</h2>
+        <p class="text-white p-9 text-4xl font-bangers m-9 text-center">Na <span
+                class="text-[#FFD700]">ComicZone</span>, somos apaixonados por quadrinhos e cultura pop. Aqui você
+            encontra uma curadoria incrível de
+            HQs clássicas, mangás, edições raras e lançamentos exclusivos. Mais do que uma loja, somos um ponto de
+            encontro para fãs de todas as idades que compartilham a mesma paixão por heróis, vilões e grandes aventuras.
+        </p>
+        <h2 class="text-8xl font-bangers text-[#FFD700] pt-12 text-center">O que você vai encontrar aqui?</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
+            <!-- Coluna 1 ocupada com todos os cards -->
+            <div class="sm:col-span-1 space-y-6">
+
+                <!-- Card 1 -->
+                <div
+                    class="flex items-center text-base text-black font-bangers bg-yellow-400 border-[4px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-xl p-3 transition-transform hover:scale-105">
+                    <span class="flex-1 ms-3 whitespace-nowrap text-2xl">
+                        <span class="text-4xl">📚</span> HQs e Mangás
+                    </span>
+                    <span class="mx-10 text-center justify-center">
+                        Explore lançamentos, clássicos e edições raras do universo das HQs e mangás!
+                    </span>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="flex items-center text-base text-black font-bangers bg-pink-400 border-[4px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-xl p-3 transition-transform hover:scale-105">
+                    <span class="flex-1 ms-3 whitespace-nowrap text-2xl">
+                        <span class="text-4xl">🎁</span> Produtos Geek
+                    </span>
+                    <span class="mx-10 text-center justify-center">
+                        Camisetas, pôsteres, canecas, action figures
+                    </span>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="flex items-center text-base text-black font-bangers bg-green-300 border-[4px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-xl p-3 transition-transform hover:scale-105">
+                    <span class="flex-1 ms-3 whitespace-nowrap text-2xl">
+                        <span class="text-4xl">🎨</span> Quadrinhos Autorais
+                    </span>
+                    <span class="mx-10 text-center justify-center">
+                        Espaço para artistas independentes
+                    </span>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="flex items-center text-base text-black font-bangers bg-blue-300 border-[4px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-xl p-3 transition-transform hover:scale-105">
+                    <span class="flex-1 ms-3 whitespace-nowrap text-2xl">
+                        <span class="text-4xl">📦</span> Assinatura Mensal
+                    </span>
+                    <span class="mx-10 text-center justify-center">
+                        Receba HQs surpresa todo mês
+                    </span>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="flex items-center text-base text-black font-bangers bg-red-400 border-[4px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-xl p-3 transition-transform hover:scale-105">
+                    <span class="flex-1 ms-3 whitespace-nowrap text-2xl">
+                        <span class="text-4xl">🧑‍🎨</span> Eventos e Workshops
+                    </span>
+                    <span class="mx-10 text-center justify-center">
+                        Criação de personagens, desenho, cosplay
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>
