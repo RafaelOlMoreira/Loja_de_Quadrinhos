@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- bloco para a fonte da pagina -->
@@ -15,7 +16,7 @@
         }
     </style>
 
-    <title>Loja de Quadrinhos</title>
+    <title>ComicZone</title>
 </head>
 
 <body class="h-0 bg-[#242424]">
@@ -40,9 +41,10 @@
 
             <!-- Botão de Login -->
             <div class="flex items-center gap-3 md:gap-0">
-                <button class="bg-[#FF3131] text-white font-medium text-sm px-4 py-2 rounded hover:bg-[#cc1e1e]">
+                <a href="./TelaDeLogin/login.html"
+                    class="bg-[#FF3131] text-white font-medium text-sm px-4 py-2 rounded hover:bg-[#cc1e1e]">
                     Fazer Login
-                </button>
+                </a>
 
                 <!-- Botão menu hamburguer -->
                 <button data-collapse-toggle="navbar-sticky" type="button"
@@ -55,6 +57,11 @@
             </div>
         </div>
     </nav>
+    <!-- Alerta abaixo da navbar -->
+    <div class="fixed top-[64px] w-full bg-yellow-400 text-black text-center py-2 z-10 shadow-md">
+        ⚠️ Você ainda não fez login. <a href="./TelaDeLogin/login.html"
+            class="underline font-semibold hover:text-red-600">Clique aqui para entrar</a>.
+    </div>
 
     <!-- Banner Section -->
     <section class="mt-[68px]">
@@ -134,13 +141,13 @@
             </div>
             <div class="grid grid-cols-2">
                 <div>
-                <img src="./assets/card1.png"
-                    class="w-auto h-full border-[4px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-xl p-3 transition-transform hover:scale-105">
-            </div>
-            <div>
-                <img src="./assets/card2.png"
-                    class="w-auto h-full border-[4px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-xl p-3 transition-transform hover:scale-105">
-            </div>
+                    <img src="./assets/card1.png"
+                        class="w-auto h-full border-[4px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-xl p-3 transition-transform hover:scale-105">
+                </div>
+                <div>
+                    <img src="./assets/card2.png"
+                        class="w-auto h-full border-[4px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-xl p-3 transition-transform hover:scale-105">
+                </div>
             </div>
         </div>
 
@@ -155,8 +162,8 @@
             Explore, colecione e viva cada página como se fosse sua!
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 place-items-center 2xl:m-64
-                    xl:m-48 lg:m-32 md:m-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 place-items-center 2xl:mx-64
+                    xl:mx-48 lg:mx-32 md:mx-24 mt-4 mb-24">
 
             <div
                 class="w-full max-w-sm border-[4px] border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-xl p-3 transition-transform hover:scale-105">
@@ -215,6 +222,14 @@
                 </div>
             </div>
         </div>
+
+        <div class="col-start-2 justify-center text-center pb-24">
+            <p class="text-5xl font-bangers text-[#FFD700] text-center pb-4">Anuncie seus produtos aqui!</p>
+            <a href="./Produto/index.html"
+                class="w-full text-center bg-[#E60012] hover:bg-[#B0000D] text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Criar Produto
+            </a>
+        </div>
     </section>
 
     <!-- Section eventos -->
@@ -226,7 +241,7 @@
 
             <!-- Evento 1 -->
             <div
-                class="event-card bg-[#242424] rounded-xl overflow-hidden shadow-lg shadow-black/30 transition-transform hover:scale-105">
+                class="h-full event-card bg-[#242424] rounded-xl overflow-hidden shadow-lg shadow-black/30 transition-transform hover:scale-105">
                 <div class="relative h-48 overflow-hidden">
                     <img src="./assets/banner.png" alt="Comic Con"
                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
@@ -270,7 +285,7 @@
 
             <!-- Evento 2 -->
             <div
-                class="event-card bg-[#242424] rounded-xl overflow-hidden shadow-lg shadow-black/30 transition-transform hover:scale-105">
+                class="h-full event-card bg-[#242424] rounded-xl overflow-hidden shadow-lg shadow-black/30 transition-transform hover:scale-105">
                 <div class="relative h-48 overflow-hidden">
                     <img src="./assets/banner.png" alt="Comic Con"
                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
@@ -315,7 +330,7 @@
 
             <!-- Evento 3 -->
             <div
-                class="event-card bg-[#242424] rounded-xl overflow-hidden shadow-lg shadow-black/30 transition-transform hover:scale-105">
+                class="h-full event-card bg-[#242424] rounded-xl overflow-hidden shadow-lg shadow-black/30 transition-transform hover:scale-105">
                 <div class="relative h-48 overflow-hidden">
                     <img src="./assets/banner.png" alt="Comic Con"
                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
@@ -358,6 +373,13 @@
                 </div>
             </div>
 
+            <div class="col-start-2 justify-center text-center">
+                <p class="text-5xl font-bangers text-[#FFD700] text-center pb-4">Organize seu evento agora!</p>
+                <a href="./Evento/index.html"
+                    class="w-full text-center bg-[#E60012] hover:bg-[#B0000D] text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                    Organizar Evento
+                </a>
+            </div>
         </div>
 
     </section>
@@ -402,7 +424,7 @@
 
     <footer
         class="bottom-0 left-0 z-20 w-full p-4 border-t border-yellow-500 shadow-sm md:flex md:items-center md:justify-center md:p-6 bg-[#242424]">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2026 <a href="https://flowbite.com/"
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2026 <a href="#"
                 class="hover:underline">ComicZone™</a>. Todos os direitos reservados.
         </span>
     </footer>
