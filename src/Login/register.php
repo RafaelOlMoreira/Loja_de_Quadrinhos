@@ -35,20 +35,20 @@
         class="absolute w-[500px] h-[500px] bg-[url('img/fundo-explosao.png')] bg-contain bg-no-repeat bg-center z-0">
       </div>
 
-      <form id="formulario-registro"
+      <form id="formulario-registro" action="registro.php" method="POST"
         class="z-10 flex flex-col gap-4 w-full max-w-sm p-6 bg-gray-600/60 backdrop-blur-md rounded-2xl">
         <h1 class="text-4xl font-bangers text-[#FFD700] text-center text-shadow-2xs">Bem vindo a <span class="text-[#E60012]">ComicZone!</span></h1>
         <h1 class="text-4xl font-bangers text-[#FFD700] text-center text-shadow-2xs">Criar Conta</h1>
-        <input type="text" placeholder="Nome e Sobrenome" required
+        <input type="text" name="nome" placeholder="Nome e Sobrenome" required
           class="w-full px-4 py-3 rounded-lg bg-[#2D2D2D] text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#FFD700] transition duration-300" />
-        <input type="email" placeholder="Email" required
+        <input type="email" name="email" placeholder="Email" required
           class="w-full px-4 py-3 rounded-lg bg-[#2D2D2D] text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#FFD700] transition duration-300" />
         <div class="w-full">
 
-          <input id="senha" type="password" placeholder="Senha" required
+          <input id="senha" type="password" name="senha" placeholder="Senha" required
             class="w-full px-4 py-3 rounded-lg bg-[#2D2D2D] text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#FFD700] transition duration-300" />
 
-          <input id="confirmarSenha" type="password" placeholder="Confirmar Senha" required
+          <input id="confirmarSenha" type="password" name="confirmarSenha" placeholder="Confirmar Senha" required
             class="w-full my-4 px-4 py-3 rounded-lg bg-[#2D2D2D] text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#FFD700] transition duration-300" />
 
           <div class="w-full grid grid-cols-2">
@@ -60,7 +60,7 @@
         </div>
         <button type="submit"
           class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded">Criar Conta</button>
-        <a href="./login.html"
+        <a href="./logar.php"
           class="border-2 border-yellow-400 hover:border-yellow-500 text-white font-bold py-2 px-4 rounded text-center">Entrar</a>
       </form>
     </div>
